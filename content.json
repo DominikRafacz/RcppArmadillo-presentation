@@ -1,7 +1,7 @@
 {
 	"name": "RcppArmadillo",
-	"description": "Combine power of Rcpp, C++ and Armadillo to avhieve efficiency!",
-	"footer": "None of the copyrights belong to us",
+	"description": "Combine power of Rcpp, C++ and Armadillo to achieve efficiency! Cheatsheet for arma functions.",
+	"footer": "Armadillo - http://arma.sourceforge.net/; RcppArdmadillo - https://CRAN.R-project.org/package=RcppArmadillo ",
 	"pages": [
 		{
 			"cards": [
