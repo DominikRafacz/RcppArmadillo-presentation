@@ -6,43 +6,204 @@
 		{
 			"cards": [
 				{
-					"title": "R level functions",
+					"title": "Generating",
 					"methods": [
 						{
-							"name": "get_best_stories",
-							"description": "Hacker News best stories",
+							"name": "linspace",
+							"description": "Generate vector with linearly spaced elements",
 							"params": [
 								{
-									"name": "max_items"
+									"name": "start"
+								},
+								{
+									"name": "end"
+								},
+								{
+								    "name":"n"
 								}
 							]
 						},
 						{
-							"name": "get_best_stories_ids",
-							"description": "Hacker News best stories ids"
+							"name": "eye",
+							"description": "generate identity matrix",
+							"params": [
+								{
+									"name": "n_rows, n_cols"
+								}
+							]
+						},
+                        {
+							"name": "one",
+							"description": "generate object filled with ones",
+						    "params": [
+								{
+									"name": "n_rows, n_cols"
+								}
+							]
+                            
+                        },
+                        {
+							"name": "zeros",
+							"description": "generate object filled with zeros",
+							"params": [
+								{
+									"name": "n_rows, n_cols"
+								}
+							]
+						},
+                        {
+							"name": "randu / randn",
+							"description": "generate object with random values (uniform and normal distributions)",
+							"params": [
+								{
+									"name": "n_rows",
+									"description": "number of rows"
+								},
+								{
+									"name": "n_cols",
+									"description": "number of columns"
+								}
+							]
 						}
 					]
 				},
 				{
-					"title": "New stories",
+					"title": "Functions",
 					"methods": [
 						{
-							"name": "get_new_stories",
-							"description": "Hacker News newest stories",
+							"name": "abs",
+							"description": "obtain magnitude of each element",
 							"params": [
 								{
-									"name": "max_items"
+									"name": "x"
 								}
 							]
 						},
 						{
-							"name": "get_new_stories_ids",
-							"description": "Hacker News newest stories ids"
+							"name": "all",
+							"description": "check whether all elements are non-zero, or satisfy a relational condition",
+							"params": [
+								{
+									"name": "X",
+									"description": "matrix"
+								}
+							]
+						},
+						{
+							"name": "any",
+							"description": "check whether any element is non-zero, or satisfies a relational condition",
+							"params": [
+								{
+									"name": "X"
+								}
+							]
+						},
+						{
+							"name": "conv_to<type>",
+							"description": "convert between matrix types",
+							"params": [
+								{
+									"name": "X"
+								}
+							]
+						},
+						{
+							"name": "cross",
+							"description": "cross product",
+							"params": [
+								{
+									"name": "A,B",
+									"description": "matrix"
+								}
+							]
+						},
+						{
+							"name": "det",
+							"description": "Determinant",
+							"params": [
+								{
+									"name": "X"
+								}
+							]
+						},
+						{
+							"name": "diagmat",
+							"description": "Diagonal matrix from given matrix or vector",
+							"params": [
+								{
+									"name": "X"
+								}
+							]
+						},
+						{
+							"name": "index_min / index_max",
+							"description": "indices of extremum values",
+							"params": [
+								{
+									"name": "X"
+								}
+							]
+						},
+						{
+							"name": "min / max",
+							"description": "return extremum values",
+							"params": [
+								{
+									"name": "X"
+								}
+							]
+						},
+						{
+							"name": "norm",
+							"description": "various norms of vectors and matrices",
+							"params": [
+								{
+									"name": "X"
+								},
+								{
+									"name": "p",
+									"description": "Intiger >= 1 or '-inf', 'inf', 'fro' "
+								}
+							]
+						},
+						{
+							"name": "reshape",
+							"description": "change size while keeping elements",
+							"params": [
+								{
+									"name": "X"
+								},
+								{
+									"name": "n_row"
+								},
+								{
+									"name": "n_col"
+								}
+							]
+						},
+						{
+							"name": "sum",
+							"description": "return sum",
+							"params": [
+								{
+									"name": "X"
+								}
+							]
+						},
+						{
+							"name": "trace",
+							"description": "sum of diagonal elements",
+							"params": [
+								{
+									"name": "X"
+								}
+							]
 						}
+						
 					]
 				},
 				{
-					"title": "Top stories",
+					"title": "Decompositions, Factorisations, Inverses and Equation Solvers ",
 					"methods": [
 						{
 							"name": "get_top_stories",
