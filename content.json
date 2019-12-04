@@ -25,7 +25,7 @@
 						},
 						{
 							"name": "eye",
-							"description": "generate identity matrix",
+							"description": "Generate identity matrix",
 							"params": [
 								{
 									"name": "n_rows, n_cols"
@@ -34,7 +34,7 @@
 						},
                         {
 							"name": "one",
-							"description": "generate object filled with ones",
+							"description": "Generate object filled with ones",
 						    "params": [
 								{
 									"name": "n_rows, n_cols"
@@ -44,7 +44,7 @@
                         },
                         {
 							"name": "zeros",
-							"description": "generate object filled with zeros",
+							"description": "Generate object filled with zeros",
 							"params": [
 								{
 									"name": "n_rows, n_cols"
@@ -53,7 +53,7 @@
 						},
                         {
 							"name": "randu / randn",
-							"description": "generate object with random values (uniform and normal distributions)",
+							"description": "Generate object with random values (uniform and normal distributions)",
 							"params": [
 								{
 									"name": "n_rows",
@@ -72,7 +72,7 @@
 					"methods": [
 						{
 							"name": "abs",
-							"description": "obtain magnitude of each element",
+							"description": "Obtain magnitude of each element",
 							"params": [
 								{
 									"name": "x"
@@ -81,17 +81,17 @@
 						},
 						{
 							"name": "all",
-							"description": "check whether all elements are non-zero, or satisfy a relational condition",
+							"description": "Check whether all elements are non-zero, or satisfy a relational condition",
 							"params": [
 								{
 									"name": "X",
-									"description": "matrix"
+									"description": "Matrix"
 								}
 							]
 						},
 						{
 							"name": "any",
-							"description": "check whether any element is non-zero, or satisfies a relational condition",
+							"description": "Check whether any element is non-zero, or satisfies a relational condition",
 							"params": [
 								{
 									"name": "X"
@@ -100,7 +100,7 @@
 						},
 						{
 							"name": "conv_to<type>",
-							"description": "convert between matrix types",
+							"description": "Convert between matrix types",
 							"params": [
 								{
 									"name": "X"
@@ -109,11 +109,11 @@
 						},
 						{
 							"name": "cross",
-							"description": "cross product",
+							"description": "Cross product",
 							"params": [
 								{
 									"name": "A,B",
-									"description": "matrix"
+									"description": "Matrixes"
 								}
 							]
 						},
@@ -137,7 +137,7 @@
 						},
 						{
 							"name": "index_min / index_max",
-							"description": "indices of extremum values",
+							"description": "Indices of extremum values",
 							"params": [
 								{
 									"name": "X"
@@ -146,7 +146,7 @@
 						},
 						{
 							"name": "min / max",
-							"description": "return extremum values",
+							"description": "Return extremum values",
 							"params": [
 								{
 									"name": "X"
@@ -155,7 +155,7 @@
 						},
 						{
 							"name": "norm",
-							"description": "various norms of vectors and matrices",
+							"description": "Various norms of vectors and matrices",
 							"params": [
 								{
 									"name": "X"
@@ -168,7 +168,7 @@
 						},
 						{
 							"name": "reshape",
-							"description": "change size while keeping elements",
+							"description": "Change size while keeping elements",
 							"params": [
 								{
 									"name": "X"
@@ -183,7 +183,7 @@
 						},
 						{
 							"name": "sum",
-							"description": "return sum",
+							"description": "Return sum",
 							"params": [
 								{
 									"name": "X"
@@ -192,7 +192,7 @@
 						},
 						{
 							"name": "trace",
-							"description": "sum of diagonal elements",
+							"description": "Sum of diagonal elements",
 							"params": [
 								{
 									"name": "X"
@@ -206,134 +206,111 @@
 					"title": "Decompositions, Factorisations, Inverses and Equation Solvers ",
 					"methods": [
 						{
-							"name": "get_top_stories",
-							"description": "Hacker News top stories",
+							"name": "chol",
+							"description": "Cholesky decomposition",
 							"params": [
 								{
-									"name": "max_items"
+									"name": "X",
+                                    "description":"Matrix"
 								}
 							]
 						},
 						{
-							"name": "get_top_stories_ids",
-							"description": "Hacker News top stories ids"
-						}
-					]
-				},
-				{
-					"title": "Latest stories",
-					"methods": [
-						{
-							"name": "get_latest_ask_stories",
-							"description": "Hacker News latest ask stories",
+							"name": "inv",
+							"description": "Inverse of general square matrix",
 							"params": [
 								{
-									"name": "max_items"
+									"name": "X"
 								}
 							]
 						},
 						{
-							"name": "get_latest_ask_stories_ids",
-							"description": "Hacker News latest ask stories ids"
-						},
-						{
-							"name": "get_latest_job_stories",
-							"description": "Hacker News latest job stories",
+							"name": "pinv",
+							"description": "Pseudo-inverse",
 							"params": [
 								{
-									"name": "max_items"
+									"name": "X"
 								}
 							]
 						},
 						{
-							"name": "get_latest_job_stories_ids",
-							"description": "Hacker News latest job stories ids"
-						},
-						{
-							"name": "get_latest_show_stories",
-							"description": "Hacker News latest show stories",
+							"name": "lu",
+							"description": "Lower-upper decomposition",
 							"params": [
 								{
-									"name": "max_items"
+									"name": "X"
 								}
 							]
 						},
 						{
-							"name": "get_latest_show_stories_ids",
-							"description": "Hacker News latest show stories ids"
-						}
-					]
-				},
-				{
-					"title": "Examples",
-					"methods": [
-						{
-							"name": "%>>%",
-							"withoutBrackets": true,
-							"description": "Example for pipeR",
+							"name": "solve",
+							"description": "Solve systems of linear equations",
 							"params": [
 								{
-									"name": "param",
-									"description": "Parameter description",
-									"classes": "my-parameter"
+									"name": "A,B",
+                                    "description": "A*X=B"
 								}
-							],
-							"examples": [
-								{
-									"name": "df %>>% plot(col = \"red\")"
-								}
+
 							]
 						}
 					]
 				},
 				{
-					"title": "Profile",
+					"title": "Statistics & Clustering",
 					"methods": [
 						{
-							"name": "get_updates",
-							"description": "Hacker News updated profiles"
-						},
-						{
-							"name": "get_user_by_username",
-							"description": "Get Hacker News user",
+							"name": "cov",
+							"description": "Covariance",
 							"params": [
 								{
-									"name": "username",
-									"description": "Username of the user, that should be retrieved"
-								}
-							]
-						}
-					]
-				},
-				{
-					"title": "Items",
-					"methods": [
-						{
-							"name": "get_item_by_id",
-							"description": "Get Hacker News by Id",
-							"params": [
-								{
-									"name": "id",
-									"description": "Id of the item, that should be retrieved"
+									"name": "X,Y"
 								}
 							]
 						},
 						{
-							"name": "get_item_by_ids",
-							"description": "Get Hacker News by ids",
+							"name": "cor",
+							"description": "Correlation",
 							"params": [
 								{
-									"name": "ids",
-									"description": "List of ids."
+									"name": "X,Y"
 								}
 							]
 						},
 						{
-							"name": "get_max_item_id",
-							"description": "Hacker News item largest id"
+							"name": "hist",
+							"description": "Histogram of counts",
+							"params": [
+								{
+									"name": "X"
+								},  
+                                {
+									"name": "centers",
+                                    "description":"Vector of increasing values"
+								}
+							]
+						},
+						{
+							"name": "kmeans",
+							"description": "Cluster data into disjoint sets",
+							"params": [
+								{
+									"name": "X"
+								}
+							]
+						},
+						{
+							"name": "princomp",
+							"description": "Principal component analysis (PCA)",
+							"params": [
+								{
+									"name": "X",
+                                    "description":"Matrix"
+								}
+							]
 						}
 					]
 				}
+				
 			]
 		}
 	]
