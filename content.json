@@ -116,201 +116,294 @@
 									"description": "Matrixes"
 								}
 							]
-						},
-						{
+						}
+					]
+				},
+				{
+						"title":"Functions",
+						"methods":[
+							{
 							"name": "det",
 							"description": "Determinant",
 							"params": [
-								{
-									"name": "X"
-								}
+									{
+										"name": "X"
+									}
 							]
 						},
 						{
-							"name": "diagmat",
-							"description": "Diagonal matrix from given matrix or vector",
-							"params": [
-								{
-									"name": "X"
-								}
-							]
+								"name": "diagmat",
+								"description": "Diagonal matrix from given matrix or vector",
+								"params": [
+									{
+										"name": "X"
+									}
+								]
 						},
 						{
-							"name": "index_min / index_max",
-							"description": "Indices of extremum values",
-							"params": [
-								{
-									"name": "X"
-								}
-							]
+								"name": "index_min / index_max",
+								"description": "Indices of extremum values",
+								"params": [
+									{
+										"name": "X"
+									}
+								]
 						},
 						{
-							"name": "min / max",
-							"description": "Return extremum values",
-							"params": [
-								{
-									"name": "X"
-								}
-							]
+								"name": "min / max",
+								"description": "Return extremum values",
+								"params": [
+									{
+										"name": "X"
+									}
+								]
 						},
 						{
-							"name": "norm",
-							"description": "Various norms of vectors and matrices",
-							"params": [
-								{
-									"name": "X"
-								},
-								{
-									"name": "p",
-									"description": "Intiger >= 1 or '-inf', 'inf', 'fro' "
-								}
-							]
+								"name": "norm",
+								"description": "Various norms of vectors and matrices",
+								"params": [
+									{
+										"name": "X"
+									},
+									{
+										"name": "p",
+										"description": "Intiger >= 1 or '-inf', 'inf', 'fro' "
+									}
+								]
 						},
 						{
-							"name": "reshape",
-							"description": "Change size while keeping elements",
-							"params": [
-								{
-									"name": "X"
-								},
-								{
-									"name": "n_row"
-								},
-								{
-									"name": "n_col"
-								}
-							]
+								"name": "reshape",
+								"description": "Change size while keeping elements",
+								"params": [
+									{
+										"name": "X"
+									},
+									{
+										"name": "n_row"
+									},
+									{
+										"name": "n_col"
+									}
+								]
 						},
 						{
-							"name": "sum",
-							"description": "Return sum",
-							"params": [
-								{
-									"name": "X"
-								}
-							]
+								"name": "sum",
+								"description": "Return sum",
+								"params": [
+									{
+										"name": "X"
+									}
+								]
 						},
 						{
-							"name": "trace",
-							"description": "Sum of diagonal elements",
-							"params": [
-								{
-									"name": "X"
-								}
-							]
-						}
-						
-					]
-				},
-				{
-					"title": "Decompositions, Factorisations, Inverses and Equation Solvers ",
-					"methods": [
-						{
-							"name": "chol",
-							"description": "Cholesky decomposition",
-							"params": [
-								{
-									"name": "X",
-                                    "description":"Matrix"
-								}
-							]
-						},
-						{
-							"name": "inv",
-							"description": "Inverse of general square matrix",
-							"params": [
-								{
-									"name": "X"
-								}
-							]
-						},
-						{
-							"name": "pinv",
-							"description": "Pseudo-inverse",
-							"params": [
-								{
-									"name": "X"
-								}
-							]
-						},
-						{
-							"name": "lu",
-							"description": "Lower-upper decomposition",
-							"params": [
-								{
-									"name": "X"
-								}
-							]
-						},
-						{
-							"name": "solve",
-							"description": "Solve systems of linear equations",
-							"params": [
-								{
-									"name": "A,B",
-                                    "description": "A*X=B"
-								}
-
-							]
-						}
-					]
-				},
-				{
-					"title": "Statistics & Clustering",
-					"methods": [
-						{
-							"name": "cov",
-							"description": "Covariance",
-							"params": [
-								{
-									"name": "X,Y"
-								}
-							]
-						},
-						{
-							"name": "cor",
-							"description": "Correlation",
-							"params": [
-								{
-									"name": "X,Y"
-								}
-							]
-						},
-						{
-							"name": "hist",
-							"description": "Histogram of counts",
-							"params": [
-								{
-									"name": "X"
-								},  
-                                {
-									"name": "centers",
-                                    "description":"Vector of increasing values"
-								}
-							]
-						},
-						{
-							"name": "kmeans",
-							"description": "Cluster data into disjoint sets",
-							"params": [
-								{
-									"name": "X"
-								}
-							]
-						},
-						{
-							"name": "princomp",
-							"description": "Principal component analysis (PCA)",
-							"params": [
-								{
-									"name": "X",
-                                    "description":"Matrix"
-								}
-							]
+								"name": "trace",
+								"description": "Sum of diagonal elements",
+								"params": [
+									{
+										"name": "X"
+									}
+								]
 						}
 					]
 				}
-				
+			]
+		},
+		{
+			"cards": [{
+				"title": "Decompositions, Factorisations, Inverses and Equation Solvers ",
+				"methods": [
+					{
+						"name": "chol",
+						"description": "Cholesky decomposition",
+						"params": [
+							{
+								"name": "X",
+								"description":"Matrix"
+							}
+						]
+					},
+					{
+						"name": "inv",
+						"description": "Inverse of general square matrix",
+						"params": [
+							{
+								"name": "X"
+							}
+						]
+					},
+					{
+						"name": "pinv",
+						"description": "Pseudo-inverse",
+						"params": [
+							{
+								"name": "X"
+							}
+						]
+					},
+					{
+						"name": "lu",
+						"description": "Lower-upper decomposition",
+						"params": [
+							{
+								"name": "X"
+							}
+						]
+					},
+					{
+						"name": "solve",
+						"description": "Solve systems of linear equations",
+						"params": [
+							{
+								"name": "A,B",
+								"description": "A*X=B"
+							}
+
+						]
+					}
+				]
+			},			
+			{
+				"title": "Statistics & Clustering",
+				"methods": [
+					{
+						"name": "cov",
+						"description": "Covariance",
+						"params": [
+							{
+								"name": "X,Y"
+							}
+						]
+					},
+					{
+						"name": "cor",
+						"description": "Correlation",
+						"params": [
+							{
+								"name": "X,Y"
+							}
+						]
+					},
+					{
+						"name": "hist",
+						"description": "Histogram of counts",
+						"params": [
+							{
+								"name": "X"
+							},  
+							{
+								"name": "centers",
+								"description":"Vector of increasing values"
+							}
+						]
+					},
+					{
+						"name": "kmeans",
+						"description": "Cluster data into disjoint sets",
+						"params": [
+							{
+								"name": "X"
+							}
+						]
+					},
+					{
+						"name": "princomp",
+						"description": "Principal component analysis (PCA)",
+						"params": [
+							{
+								"name": "X",
+								"description":"Matrix"
+							}
+						]
+					}
+				]
+			},
+			{
+				"title":"Functions",
+				"methods":[
+					{
+					"name": "det",
+					"description": "Determinant",
+					"params": [
+							{
+								"name": "X"
+							}
+					]
+				},
+				{
+						"name": "diagmat",
+						"description": "Diagonal matrix from given matrix or vector",
+						"params": [
+							{
+								"name": "X"
+							}
+						]
+				},
+				{
+						"name": "index_min / index_max",
+						"description": "Indices of extremum values",
+						"params": [
+							{
+								"name": "X"
+							}
+						]
+				},
+				{
+						"name": "min / max",
+						"description": "Return extremum values",
+						"params": [
+							{
+								"name": "X"
+							}
+						]
+				},
+				{
+						"name": "norm",
+						"description": "Various norms of vectors and matrices",
+						"params": [
+							{
+								"name": "X"
+							},
+							{
+								"name": "p",
+								"description": "Intiger >= 1 or '-inf', 'inf', 'fro' "
+							}
+						]
+				},
+				{
+						"name": "reshape",
+						"description": "Change size while keeping elements",
+						"params": [
+							{
+								"name": "X"
+							},
+							{
+								"name": "n_row"
+							},
+							{
+								"name": "n_col"
+							}
+						]
+				},
+				{
+						"name": "sum",
+						"description": "Return sum",
+						"params": [
+							{
+								"name": "X"
+							}
+						]
+				},
+				{
+						"name": "trace",
+						"description": "Sum of diagonal elements",
+						"params": [
+							{
+								"name": "X"
+							}
+						]
+				}
+				]
+			}
 			]
 		}
 	]
