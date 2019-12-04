@@ -1,0 +1,179 @@
+{
+	"name": "RcppArmadillo",
+	"description": "Combine power of Rcpp, C++ and Armadillo to avhieve efficiency!",
+	"footer": "None of the copyrights belong to us",
+	"pages": [
+		{
+			"cards": [
+				{
+					"title": "R level functions",
+					"methods": [
+						{
+							"name": "get_best_stories",
+							"description": "Hacker News best stories",
+							"params": [
+								{
+									"name": "max_items"
+								}
+							]
+						},
+						{
+							"name": "get_best_stories_ids",
+							"description": "Hacker News best stories ids"
+						}
+					]
+				},
+				{
+					"title": "New stories",
+					"methods": [
+						{
+							"name": "get_new_stories",
+							"description": "Hacker News newest stories",
+							"params": [
+								{
+									"name": "max_items"
+								}
+							]
+						},
+						{
+							"name": "get_new_stories_ids",
+							"description": "Hacker News newest stories ids"
+						}
+					]
+				},
+				{
+					"title": "Top stories",
+					"methods": [
+						{
+							"name": "get_top_stories",
+							"description": "Hacker News top stories",
+							"params": [
+								{
+									"name": "max_items"
+								}
+							]
+						},
+						{
+							"name": "get_top_stories_ids",
+							"description": "Hacker News top stories ids"
+						}
+					]
+				},
+				{
+					"title": "Latest stories",
+					"methods": [
+						{
+							"name": "get_latest_ask_stories",
+							"description": "Hacker News latest ask stories",
+							"params": [
+								{
+									"name": "max_items"
+								}
+							]
+						},
+						{
+							"name": "get_latest_ask_stories_ids",
+							"description": "Hacker News latest ask stories ids"
+						},
+						{
+							"name": "get_latest_job_stories",
+							"description": "Hacker News latest job stories",
+							"params": [
+								{
+									"name": "max_items"
+								}
+							]
+						},
+						{
+							"name": "get_latest_job_stories_ids",
+							"description": "Hacker News latest job stories ids"
+						},
+						{
+							"name": "get_latest_show_stories",
+							"description": "Hacker News latest show stories",
+							"params": [
+								{
+									"name": "max_items"
+								}
+							]
+						},
+						{
+							"name": "get_latest_show_stories_ids",
+							"description": "Hacker News latest show stories ids"
+						}
+					]
+				},
+				{
+					"title": "Examples",
+					"methods": [
+						{
+							"name": "%>>%",
+							"withoutBrackets": true,
+							"description": "Example for pipeR",
+							"params": [
+								{
+									"name": "param",
+									"description": "Parameter description",
+									"classes": "my-parameter"
+								}
+							],
+							"examples": [
+								{
+									"name": "df %>>% plot(col = \"red\")"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Profile",
+					"methods": [
+						{
+							"name": "get_updates",
+							"description": "Hacker News updated profiles"
+						},
+						{
+							"name": "get_user_by_username",
+							"description": "Get Hacker News user",
+							"params": [
+								{
+									"name": "username",
+									"description": "Username of the user, that should be retrieved"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Items",
+					"methods": [
+						{
+							"name": "get_item_by_id",
+							"description": "Get Hacker News by Id",
+							"params": [
+								{
+									"name": "id",
+									"description": "Id of the item, that should be retrieved"
+								}
+							]
+						},
+						{
+							"name": "get_item_by_ids",
+							"description": "Get Hacker News by ids",
+							"params": [
+								{
+									"name": "ids",
+									"description": "List of ids."
+								}
+							]
+						},
+						{
+							"name": "get_max_item_id",
+							"description": "Hacker News item largest id"
+						}
+					]
+				}
+			]
+		}
+	]
+}
